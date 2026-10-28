@@ -52,7 +52,7 @@ export default function LanternFinale() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.4, delay: 0.3 }}
         >
-          Đây là ngôi nhà
+          Ngôi nhà
           <br />
           của chúng ta
         </motion.h2>
@@ -62,7 +62,7 @@ export default function LanternFinale() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 1.6, delay: 0.9 }}
         >
-          Một nơi mà chúng ta có thể trở về sau những giông bão.
+          Một nơi mà chúng ta có thể trở về nhìn lại những kỷ niệm sau những giông bão.
         </motion.p>
       </div>
     </section>

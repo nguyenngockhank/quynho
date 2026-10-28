@@ -4,17 +4,15 @@ export const MESSAGES = [
   {
     from: 'From Me',
     text:
-      'Luôn hạnh phúc em nhé!',
+      'Luôn hạnh phúc em nhé, luôn vui vẻ em nhé!',
   },
   {
     from: 'From Me',
-    text:
-      'Luôn vui vẻ em nhé!',
+    text: 'Nhưng để thằng khác bên cạnh em, anh không an tâm',
   },
   {
     from: 'From Me',
-    text:
-      'Nhưng để thằng khác bên cạnh em, anh không an tâm!',
+    text: 'Nên là anh giữ em ở đây nhé',
   },
 
 ]

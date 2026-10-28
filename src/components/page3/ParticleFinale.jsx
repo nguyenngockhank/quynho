@@ -11,8 +11,8 @@ import './ParticleFinale.css'
 const PHRASES = ['Quỷ nhỏ\n&\nNgưu vương']
 // Captions shown beneath each stage (stage 0 = heart).
 const CAPTIONS = [
-  'Lần đầu thấy em...',
-  'mãi...',
+  'Từ lần đầu tiên, ta đi bên nhau',
+  'Anh đã biết tim anh đánh rơi rồi',
 ]
 
 export default function ParticleFinale() {

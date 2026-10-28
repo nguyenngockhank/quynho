@@ -62,7 +62,7 @@ export default function BookIntro() {
             <div className="book-cover-face">
               <span className="book-cover-orn">✦</span>
               <p className="eyebrow">Lời cuối</p>
-              <h2 className="book-cover-title gold-text">Một câu chuyện đáng được gìn giữ</h2>
+              <h2 className="book-cover-title gold-text">Một câu chuyện cần được kể cho con cháu</h2>
               <span className="book-cover-orn">❦</span>
             </div>
             <div className="book-spine" />

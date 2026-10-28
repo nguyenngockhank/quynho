@@ -1,4 +1,5 @@
-import { Suspense, useEffect, useRef } from 'react'
+import { Suspense, useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { AdaptiveDpr } from '@react-three/drei'
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing'
@@ -7,7 +8,8 @@ import { useInViewport } from '../../lib/useInViewport'
 import HeartPoints from '../three/HeartPoints'
 import Dust from '../three/Dust'
 import GoldButton from '../common/GoldButton'
-import { COUPLE } from '../../data/config'
+import SecretModal from './SecretModal'
+import { COUPLE, SECRET_GATE } from '../../data/config'
 import './Hero.css'
 
 /** Gentle pointer parallax on the camera (no dolly — the hero is static). */
@@ -25,6 +27,16 @@ export default function Hero() {
   const heroRef = useRef(null)
   const titleRef = useRef(null)
   const active = useInViewport(heroRef)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const navigate = useNavigate()
+
+  const handleCtaClick = () => {
+    if (SECRET_GATE?.enabled === false) {
+      navigate('/universe')
+    } else {
+      setIsModalOpen(true)
+    }
+  }
 
   // The heart never explodes here — it simply forms and rotates forever.
   const anim = useRef({ form: 0, explode: 0, camZ: 5.4 }).current
@@ -93,11 +105,17 @@ export default function Hero() {
         </div>
 
         <div className="hero-cta">
-          <GoldButton to="/universe" float={false}>
+          <GoldButton onClick={handleCtaClick} float={false}>
             Khám phá
           </GoldButton>
         </div>
       </div>
+
+      <SecretModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSuccess={() => navigate('/universe')}
+      />
     </section>
   )
 }
