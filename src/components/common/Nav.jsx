@@ -22,7 +22,7 @@ export default function Nav() {
         <span className="nav-heart">❤</span>
         <span className="nav-names gold-text">{COUPLE.name}</span>
       </NavLink>
-      <ul className="nav-links">
+      {/* <ul className="nav-links">
         {LINKS.map((l) => (
           <li key={l.to}>
             <NavLink
@@ -36,7 +36,7 @@ export default function Nav() {
             </NavLink>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </motion.nav>
   )
 }
