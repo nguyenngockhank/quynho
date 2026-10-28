@@ -42,7 +42,7 @@ export default function Galaxy() {
   const lenis = useSmoothScroll()
   const wrapRef = useRef(null)
   const controlsRef = useRef(null)
-  const zoomApi = useRef({ in: () => {}, out: () => {} })
+  const zoomApi = useRef({ in: () => { }, out: () => { } })
   const active = useInViewport(wrapRef)
 
   // Lock scroll only while a memory card is open (never traps the page).
@@ -107,9 +107,9 @@ export default function Galaxy() {
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="eyebrow">Chapter Two</p>
+          {/* <p className="eyebrow">Chương II</p> */}
           <h2 className="galaxy-title">
-            A <span className="gold-text">Universe</span> of Memories
+            <span className="gold-text">Lâu đài</span> của kỷ niệm
           </h2>
         </motion.div>
 
@@ -121,7 +121,7 @@ export default function Galaxy() {
 
         {/* Tap to continue down to the counter */}
         <button className="galaxy-continue" onClick={goToCounter} data-hover>
-          <span>Tap to Continue</span>
+          <span>Xem thêm</span>
           <span className="galaxy-continue-arrow">↓</span>
         </button>
       </div>
@@ -157,7 +157,7 @@ export default function Galaxy() {
                 <h3 className="memory-card-title">{selected.title}</h3>
                 <p className="memory-card-story">{selected.story}</p>
                 <button className="memory-card-close" onClick={() => setSelected(null)} data-hover>
-                  Close Memory
+                  Đóng lại ký ức
                 </button>
               </div>
             </motion.div>

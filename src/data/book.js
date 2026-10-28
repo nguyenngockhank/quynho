@@ -2,10 +2,10 @@
    Swap the /photos paths with your own (drop files in /source-photos → npm run photos). */
 
 export const BOOK_PHOTOS = [
-  { image: '/photos/love1.webp', label: 'Us' },
-  { image: '/photos/love4.webp', label: 'The Proposal' },
-  { image: '/photos/love5.webp', label: 'Our Day' },
-  { image: '/photos/love6.webp', label: 'Adventures' },
-  { image: '/photos/love9.webp', label: 'Always' },
-  { image: '/photos/love8.webp', label: 'Forever' },
+  { image: '/photos/IMG_2211.JPG', label: 'Vẽ bậy' },
+  { image: '/photos/IMG_4016.JPG', label: 'Công viên 13/12/2019' },
+  { image: '/photos/IMG_3236.JPG', label: 'Lần đầu trà sữa cùng nhau' },
+  { image: '/photos/IMG_4924.JPG', label: 'Chiếc áo cặp đầu tiên' },
+  { image: '/photos/IMG_4156.JPG', label: 'Nụ hôn của sự chờ đợi' },
+  { image: '/photos/IMG_5976.JPG', label: 'Niềm vui bóng đá' },
 ]

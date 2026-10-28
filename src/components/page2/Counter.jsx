@@ -56,16 +56,16 @@ export default function Counter() {
   return (
     <section className="counter" ref={ref}>
       <div className="container counter-inner">
-        <motion.p
+        {/* <motion.p
           className="eyebrow"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
         >
           Together For
-        </motion.p>
+        </motion.p> */}
         <h2 className="counter-heading">
-          A Lifetime <span className="gold-text">&amp; Counting</span>
+          Kỷ niệm thì đẹp <span className="gold-text">nhưng thời gian cứ mãi đẩy nó về phía xa</span>
         </h2>
 
         <div className="counter-grid">
@@ -91,12 +91,12 @@ export default function Counter() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 1.4, delay: 0.6 }}
         >
-          That’s <strong><CountUp value={d.totalDays} active={inView} duration={2.2} /></strong> days of choosing each other.
+          Đã qua <strong><CountUp value={d.totalDays} active={inView} duration={2.2} /></strong> ngày, từ tin nhắn đầu tiên của chúng ta trên Facebook.
         </motion.p>
 
         <div className="counter-cta">
           <GoldButton to="/celebration" float={false}>
-            Enter the Celebration
+            Tiến sâu hơn
           </GoldButton>
         </div>
       </div>

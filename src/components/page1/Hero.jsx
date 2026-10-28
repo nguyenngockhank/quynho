@@ -82,18 +82,19 @@ export default function Hero() {
 
       <div className="hero-overlay">
         <div className="hero-top">
-          <p className="hero-eyebrow eyebrow">A Celebration of Forever</p>
+          <p className="hero-eyebrow eyebrow">Góc nhỏ trên Internet</p>
           <h1 className="hero-title" ref={titleRef}>
-            <span className="hero-title-line hero-title-happy">Happy Anniversary</span>
-            <span className="hero-title-line">
-              <span className="gold-text">{COUPLE.heroName}</span>
+            <span className="hero-title-line hero-title-happy">
+              Quỷ nhỏ...
             </span>
+            <span className="gold-text" style={{ fontSize: '1.6rem' }}>của Ngưu vương</span>
           </h1>
+          {/* </h1> */}
         </div>
 
         <div className="hero-cta">
           <GoldButton to="/universe" float={false}>
-            Continue Our Story
+            Khám phá
           </GoldButton>
         </div>
       </div>

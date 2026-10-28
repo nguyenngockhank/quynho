@@ -1,11 +1,12 @@
 /* Floating love quotes that drift through the Memory Universe. */
 
 export const QUOTES = [
-  'You are my today and all of my tomorrows.',
-  'In all the world, there is no heart for me like yours.',
-  'Every love story is beautiful, but ours is my favorite.',
-  'I have found the one whom my soul loves.',
-  'Grow old with me — the best is yet to be.',
-  'With you, home is wherever we are.',
-  'I still fall for you a little more every single day.',
+  'Em là hôm qua, hôm nay và cả ngày mai của anh.',
+  'Nhân sinh là đi tìm lẽ sống và thứ hay ho nhất anh tìm được đó là em.',
+  'Ta nợ nàng một chàng trai 6 múi, nàng nợ ta người sửa túi nâng khăn.',
+  'Khùng như em thả rông nguy hiểm lắm...',
+  'Quá khứ em, anh đã không tham dự nhưng tương lai chắc chắn anh sẽ tới sinh sự.',
+  'Em bước vào đời anh như 1 vị thần, nên anh sẽ gọi em là Tâm thần',
+  'Anh có vợ chưa? Em ừ một cái là anh có liền',
+  "Ta đã dương tính nàng"
 ]

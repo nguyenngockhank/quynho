@@ -8,11 +8,11 @@ import ParticleMorphText from '../three/ParticleMorphText'
 import Dust from '../three/Dust'
 import './ParticleFinale.css'
 
-const PHRASES = ['YOU\n&\nME']
+const PHRASES = ['Quỷ nhỏ\n&\nNgưu vương']
 // Captions shown beneath each stage (stage 0 = heart).
 const CAPTIONS = [
-  'From the moment we met…',
-  'to you & me — always…',
+  'Lần đầu thấy em...',
+  'mãi...',
 ]
 
 export default function ParticleFinale() {

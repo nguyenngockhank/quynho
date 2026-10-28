@@ -61,8 +61,8 @@ export default function BookIntro() {
           <div className="book-cover">
             <div className="book-cover-face">
               <span className="book-cover-orn">✦</span>
-              <p className="eyebrow">The Final Chapter</p>
-              <h2 className="book-cover-title gold-text">A Story Worth Keeping</h2>
+              <p className="eyebrow">Lời cuối</p>
+              <h2 className="book-cover-title gold-text">Một câu chuyện đáng được gìn giữ</h2>
               <span className="book-cover-orn">❦</span>
             </div>
             <div className="book-spine" />

@@ -4,9 +4,9 @@ import { COUPLE } from '../../data/config'
 import './Nav.css'
 
 const LINKS = [
-  { to: '/', label: 'The Beginning', n: 'I' },
-  { to: '/universe', label: 'Memory Universe', n: 'II' },
-  { to: '/celebration', label: 'Celebration', n: 'III' },
+  { to: '/', label: '', n: 'I' },
+  { to: '/universe', label: '', n: 'II' },
+  { to: '/celebration', label: '', n: 'III' },
 ]
 
 export default function Nav() {

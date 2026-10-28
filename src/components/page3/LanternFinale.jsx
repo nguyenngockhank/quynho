@@ -52,9 +52,9 @@ export default function LanternFinale() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.4, delay: 0.3 }}
         >
-          With All My Love,
+          Đây là ngôi nhà
           <br />
-          {COUPLE.signature}
+          của chúng ta
         </motion.h2>
         <motion.p
           className="lantern-sub"
@@ -62,7 +62,7 @@ export default function LanternFinale() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 1.6, delay: 0.9 }}
         >
-          Here’s to forever — and every beautiful day in between.
+          Một nơi mà chúng ta có thể trở về sau những giông bão.
         </motion.p>
       </div>
     </section>
