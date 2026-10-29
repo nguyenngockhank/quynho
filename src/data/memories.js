@@ -67,6 +67,12 @@ export const MEMORIES = [
     image: `${PREFIX}/f1289760544.png`,
     story: 'Có những đêm, mình cứ thỏ thẻ tâm tình đến tận 2 giờ sáng, kể hết chuyện này đến chuyện khác mà chẳng ai muốn nói lời tạm biệt. Em ngủ quên lúc nào không hay.'
   },
+  {
+    key: 'm12',
+    title: 'Áo anh, người em',
+    image: `${PREFIX}/IMG_5379.JPG`,
+    story: 'Vừa đánh dấu bản quyền cho thiên hạ, vừa được chữ ký cơ thể mang về, ôm em thật chặt...',
+  },
   // {
   //   key: 'm12',
   //   title: 'Văn Miếu – Quốc Tử Giám',
