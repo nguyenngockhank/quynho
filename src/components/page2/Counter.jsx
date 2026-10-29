@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { COUPLE } from '../../data/config'
 import GoldButton from '../common/GoldButton'
+import EnvelopeCarousel from './EnvelopeCarousel'
 import './Counter.css'
 
 /** Calendar breakdown (years / months / days) between two dates. */
@@ -93,6 +94,9 @@ export default function Counter() {
         >
           Đã qua <strong><CountUp value={d.totalDays} active={inView} duration={2.2} /></strong> ngày, từ tin nhắn đầu tiên của chúng ta trên Facebook.
         </motion.p>
+
+        {/* LIST OF 50 LOVE ENVELOPES */}
+        <EnvelopeCarousel />
 
         <div className="counter-cta">
           <GoldButton to="/celebration" float={false}>

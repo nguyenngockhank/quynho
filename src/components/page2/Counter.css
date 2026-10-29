@@ -3,6 +3,7 @@
   padding: clamp(80px, 14vh, 180px) 0;
   background: radial-gradient(ellipse at 50% 0%, #1c130c 0%, #0a0705 60%);
   text-align: center;
+  overflow-x: clip;
 }
 .counter-heading { font-size: clamp(2.2rem, 5vw, 4rem); margin: 0.6rem 0 clamp(40px, 6vh, 72px); }
 

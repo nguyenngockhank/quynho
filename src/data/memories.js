@@ -73,6 +73,18 @@ export const MEMORIES = [
     image: `${PREFIX}/IMG_5379.JPG`,
     story: 'Vừa đánh dấu bản quyền cho thiên hạ, vừa được chữ ký cơ thể mang về, ôm em thật chặt...',
   },
+  {
+    key: 'm13',
+    title: 'Lobocos',
+    image: `${PREFIX}/IMG_0276.JPG`,
+    story: 'Lần đầu anh thấy kỹ năng vẽ của em có thể làm ra tiền, anh cũng thấy em mệt mà vẫn vui tươi đến thế. ',
+  },
+  {
+    key: 'm14',
+    title: 'Hiệp sĩ mù',
+    image: `${PREFIX}/IMG_0323.JPG`,
+    story: 'Em bị mù hay sao mà lại yêu anh vậy?',
+  },
   // {
   //   key: 'm12',
   //   title: 'Văn Miếu – Quốc Tử Giám',
