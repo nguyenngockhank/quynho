@@ -28,6 +28,7 @@ function PhotoStar({ memory, position, index, onSelect, registerNode }) {
   const glowRef = useRef()
   const [hovered, setHovered] = useState(false)
   const tex = useTexture(img(memory.image, memory.title, index, 500, 650))
+
   const phase = useMemo(() => Math.random() * Math.PI * 2, [])
 
   useFrame((state) => {

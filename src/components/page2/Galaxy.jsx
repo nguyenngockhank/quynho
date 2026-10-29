@@ -109,7 +109,7 @@ export default function Galaxy() {
         >
           {/* <p className="eyebrow">Chương II</p> */}
           <h2 className="galaxy-title">
-            <span className="gold-text">Lâu đài</span> của kỷ niệm
+            <span className="gold-text">Lâu đài</span> ký ức
           </h2>
         </motion.div>
 
