@@ -240,6 +240,16 @@ Mình ở xa nhau, thời gian bên nhau đã ít rồi, vậy nên những lúc
 
 Anh hơi tủi thân, anh nghĩ anh hơi hèn mọn, anh chẳng biết viết gì nữa, thương em. Em ngủ ngon.`
 
+const STOP_26 = `Trong đầu anh lúc ấy hoang mang lắm, những tin nhắn chào nhau buổi sáng, những lần tám nhảm vô tri, những câu than thở về đủ thứ trên đời lướt nhanh qua đầu anh. Anh vội vàng ôm lấy những thứ anh có thể nắm giữ, anh sợ em xoá hết những tin nhắn ấy nên anh đẩy em ra tự mình ở lại trong trong căn phòng ảo ấy.
+
+Anh nghĩ mình sẽ khóc, nhưng không, bản năng anh vẫn đang kháng cự, chống chọi lại một thứ vô hình nào đó… chắc sau này thứ đó sẽ được gọi là nổi đau. Anh thường trách móc em nhưng nó chỉ diễn ra trong đầu, anh không thể mắng mỏ hay cãi vả như các cặp đôi khác. Tâm trí anh rối bời, không thể sắp xếp được câu từ chữ nghĩa. Anh luôn tỏ ra phòng thủ với xã hội này, nhưng anh đã sai khi thu mình với em. Em cũng đã nhắc anh nhiều lần rồi nhỉ. Anh mãi không thay đổi được, anh vừa ngu vừa lỳ nhỉ. Vui thì ko biết cười, buồn cũng ko biết khóc. Hạnh phúc thì ko biết giữ, người bên cạnh thì ko biết trân trọng.
+
+Rồi anh đọc lại những thứ anh viết cho em, anh xem lại dự án còn đang dang dở. Có lẽ những thứ đang bị đình chỉ vô thời hạn, nay vì sự kiện đặc biệt nên lại được khơi ra. Anh cố gắng hoàn thành nó. Anh một lần nữa cảm nhận những cảm xúc cũ đó, lệ cứ thế mà tuôn, anh đã viết ra là phải yêu em nhiều hơn, ưu tiên của em lên trên tất cả, trên cả bản thân anh. Bẵng đi một thời gian, anh lại quên mất rồi.
+
+Nói ra những lời đó, chắc em cũng phân vân lâu rồi. Em đã phải bị tổn thương đến mức nào chứ. Anh xin lỗi!
+
+Chiều hôm ấy, ta đi cùng nhau, phố cũng lạ đường cũng xa, người mệt chân mỏi, chúng ta đã dừng lại… dừng lại rất lâu, dừng lại nhiều lần nhưng sau mỗi lần dừng lại ta lại nắm tay nhau đi tiếp vì phía trước còn còn có đường.`
+
 export const LETTERS = [
   {
     id: 1,
@@ -374,7 +384,17 @@ Anh cảm thấy mình vừa mất đi gì đó
 Có thể là thứ quan trọng nhất
 Anh biết chứ một thằng hậu đậu, bất cẩn như anh làm gì biết giữ gìn một thứ quý giá
 Em cho phép anh vẫn nhắn tin cho em nhé, khi nào hết thương hết nhớ anh sẽ dừng lại.`,
+  },
+  {
+    id: 15,
+    number: "14",
+    tag: 'EMOTION',
+    title: 'Lặng thinh',
+    date: '28/10/2026',
+    preview: 'sau mỗi lần dừng lại ta lại nắm tay nhau đi tiếp vì phía trước còn còn có đường.',
+    content: STOP_26,
   }
+
   //   {
   //     id: 2,
   //     number: '02',

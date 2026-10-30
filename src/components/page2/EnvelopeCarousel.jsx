@@ -4,6 +4,8 @@ import { LETTERS } from '../../data/letters'
 import { useSmoothScroll } from '../../lib/SmoothScroll'
 import './EnvelopeCarousel.css'
 
+
+
 export default function EnvelopeCarousel() {
   const [selectedLetter, setSelectedLetter] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -268,130 +270,140 @@ export default function EnvelopeCarousel() {
         </div> */}
       </div>
 
-      {/* SCROLLABLE LETTER MODAL */}
-      <AnimatePresence>
-        {selectedLetter && (
-          <motion.div
-            className="letter-modal-backdrop"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+      {/* SCROLLED LETTER MODAL */}
+      <LetterModal
+        letter={selectedLetter}
+        navigateModal={navigateModal}
+        setSelectedLetter={setSelectedLetter}
+      />
+    </div>
+  )
+}
+
+
+function LetterModal(props) {
+  const { letter: selectedLetter, navigateModal, setSelectedLetter } = props
+  return <AnimatePresence>
+    {selectedLetter && (
+      <motion.div
+        className="letter-modal-backdrop"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={() => setSelectedLetter(null)}
+      >
+        <motion.div
+          className="letter-modal-dialog"
+          initial={{ scale: 0.88, y: 30, opacity: 0 }}
+          animate={{ scale: 1, y: 0, opacity: 1 }}
+          exit={{ scale: 0.92, y: 20, opacity: 0 }}
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Close Button */}
+          <button
+            className="letter-modal-close"
             onClick={() => setSelectedLetter(null)}
+            aria-label="Đóng thư"
+            data-hover
           >
-            <motion.div
-              className="letter-modal-dialog"
-              initial={{ scale: 0.88, y: 30, opacity: 0 }}
-              animate={{ scale: 1, y: 0, opacity: 1 }}
-              exit={{ scale: 0.92, y: 20, opacity: 0 }}
-              transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Close Button */}
-              <button
-                className="letter-modal-close"
-                onClick={() => setSelectedLetter(null)}
-                aria-label="Đóng thư"
-                data-hover
+            ✕
+          </button>
+
+          {/* Letter Parchment Container */}
+          <div className="parchment-container">
+            {/* Vintage Letter Border / Frame */}
+            <div className="parchment-border">
+              {/* Decorative Vintage Postmark Stamp */}
+              <div className="parchment-postmark">
+                <div className="postmark-circle">
+                  <span>SPECIAL DELIVERY</span>
+                  <strong>KHANK & TAM</strong>
+                  <span>★ FOREVER ★</span>
+                </div>
+                <div className="postmark-waves">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+              {/* Letter Header */}
+              <div className="parchment-header">
+                <div className="parchment-seal-icon">
+                  <div className="seal-mini">K ♡ T</div>
+                </div>
+                <div className="parchment-meta">
+                  <span className="parchment-number">BỨC THƯ SỐ #{selectedLetter.number}</span>
+                  <span className="parchment-tag">• {selectedLetter.tag} •</span>
+                  <span className="parchment-date">{selectedLetter.date}</span>
+                </div>
+              </div>
+
+              <h3 className="parchment-title">{selectedLetter.title}</h3>
+
+              {/* Scrollable Letter Content */}
+              <div
+                className="parchment-scroll-area"
+                data-lenis-prevent="true"
               >
-                ✕
-              </button>
+                {/* <div className="parchment-salutation">
+                  Gửi Quỷ Nhỏ yêu dấu của anh,
+                </div> */}
 
-              {/* Letter Parchment Container */}
-              <div className="parchment-container">
-                {/* Vintage Letter Border / Frame */}
-                <div className="parchment-border">
-                  {/* Decorative Vintage Postmark Stamp */}
-                  <div className="parchment-postmark">
-                    <div className="postmark-circle">
-                      <span>SPECIAL DELIVERY</span>
-                      <strong>KHANK & TAM</strong>
-                      <span>★ FOREVER ★</span>
-                    </div>
-                    <div className="postmark-waves">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
+                <div className="parchment-body-text">
+                  {selectedLetter.content.split('\n\n').map((paragraph, idx) => (
+                    <p key={idx} className="parchment-paragraph">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
 
-                  {/* Letter Header */}
-                  <div className="parchment-header">
-                    <div className="parchment-seal-icon">
-                      <div className="seal-mini">K ♡ T</div>
-                    </div>
-                    <div className="parchment-meta">
-                      <span className="parchment-number">BỨC THƯ SỐ #{selectedLetter.number}</span>
-                      <span className="parchment-tag">• {selectedLetter.tag} •</span>
-                      <span className="parchment-date">{selectedLetter.date}</span>
-                    </div>
-                  </div>
+                <div className="parchment-divider">
+                  <span className="divider-line"></span>
+                  <span className="divider-heart">❦</span>
+                  <span className="divider-line"></span>
+                </div>
 
-                  <h3 className="parchment-title">{selectedLetter.title}</h3>
-
-                  {/* Scrollable Letter Content */}
-                  <div
-                    className="parchment-scroll-area"
-                    data-lenis-prevent="true"
-                  >
-                    {/* <div className="parchment-salutation">
-                      Gửi Quỷ Nhỏ yêu dấu của anh,
-                    </div> */}
-
-                    <div className="parchment-body-text">
-                      {selectedLetter.content.split('\n\n').map((paragraph, idx) => (
-                        <p key={idx} className="parchment-paragraph">
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-
-                    <div className="parchment-divider">
-                      <span className="divider-line"></span>
-                      <span className="divider-heart">❦</span>
-                      <span className="divider-line"></span>
-                    </div>
-
-                    {/* Sign-off */}
-                    <div className="parchment-signoff">
-                      {/* <p className="signoff-quote">"Mãi thương em nhiều hơn mỗi ngày qua"</p> */}
-                      <div className="signoff-signature">
-                        <span>Người thương của em,</span>
-                        <strong className="signature-name">Ngưu Vương</strong>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Modal Footer Controls */}
-                  <div className="parchment-footer-nav">
-                    <button
-                      className="parchment-nav-btn prev"
-                      onClick={() => navigateModal(-1)}
-                      data-hover
-                    >
-                      <span className="nav-arrow">←</span>
-                      <span>Bức thư trước</span>
-                    </button>
-
-                    <div className="parchment-index-indicator">
-                      {selectedLetter.id} / {LETTERS.length}
-                    </div>
-
-                    <button
-                      className="parchment-nav-btn next"
-                      onClick={() => navigateModal(1)}
-                      data-hover
-                    >
-                      <span>Bức thư sau</span>
-                      <span className="nav-arrow">→</span>
-                    </button>
+                {/* Sign-off */}
+                <div className="parchment-signoff">
+                  {/* <p className="signoff-quote">"Mãi thương em nhiều hơn mỗi ngày qua"</p> */}
+                  <div className="signoff-signature">
+                    <span>Người thương của em,</span>
+                    <strong className="signature-name">Ngưu Vương</strong>
                   </div>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  )
+
+              {/* Modal Footer Controls */}
+              <div className="parchment-footer-nav">
+                <button
+                  className="parchment-nav-btn prev"
+                  onClick={() => navigateModal(-1)}
+                  data-hover
+                >
+                  <span className="nav-arrow">←</span>
+                  <span>Bức thư trước</span>
+                </button>
+
+                <div className="parchment-index-indicator">
+                  {selectedLetter.id} / {LETTERS.length}
+                </div>
+
+                <button
+                  className="parchment-nav-btn next"
+                  onClick={() => navigateModal(1)}
+                  data-hover
+                >
+                  <span>Bức thư sau</span>
+                  <span className="nav-arrow">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
+    )}
+  </AnimatePresence>
 }

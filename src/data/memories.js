@@ -71,13 +71,13 @@ export const MEMORIES = [
     key: 'm12',
     title: 'Áo anh, người em',
     image: `${PREFIX}/IMG_5379.JPG`,
-    story: 'Vừa đánh dấu bản quyền cho thiên hạ, vừa được chữ ký cơ thể mang về, ôm em thật chặt...',
+    story: 'Vừa đánh dấu bản quyền cho thiên hạ biết, vừa được chữ ký cơ thể mang về, ôm em thật chặt...',
   },
   {
     key: 'm13',
     title: 'Lobocos',
     image: `${PREFIX}/IMG_0276.JPG`,
-    story: 'Lần đầu anh thấy kỹ năng vẽ của em có thể làm ra tiền, anh cũng thấy em mệt mà vẫn vui tươi đến thế. ',
+    story: 'Lần đầu anh thấy kỹ năng vẽ của em có thể làm ra tiền, anh cũng thấy em mệt mà vẫn vui tươi đến thế.',
   },
   {
     key: 'm14',
@@ -85,10 +85,22 @@ export const MEMORIES = [
     image: `${PREFIX}/IMG_0323.JPG`,
     story: 'Em bị mù hay sao mà lại yêu anh vậy?',
   },
-  // {
-  //   key: 'm12',
-  //   title: 'Văn Miếu – Quốc Tử Giám',
-  //   image: `${PREFIX}/f1289760544.png`,
-  //   story: 'Ông bảo là anh phải đối xử tốt với em. Anh vẫn luôn muốn thế.'
-  // },
+  {
+    key: 'm15',
+    title: 'Văn Miếu – Quốc Tử Giám',
+    image: `${PREFIX}/IMG_5012.JPG`,
+    story: 'Ông bảo là anh phải đối xử tốt với em. Anh vẫn luôn muốn thế.'
+  },
+  {
+    key: 'm16',
+    title: 'Bỏ phố về quê',
+    image: `${PREFIX}/7ee48f4176d2c68c9fc3.jpg`,
+    story: 'Những ngày thức dậy 4h sáng để làm cơm nắm, bán nhanh còn có lãi nữa, anh còn được 650k tiền hoàn vón.'
+  },
+  {
+    key: 'm17',
+    title: 'Sasysis',
+    image: `${PREFIX}/IMG_4401.JPG`,
+    story: 'Em bỏ công sức nhiều, thường xuyên làm khuya, có tiền nhưng kiệt quệ'
+  },
 ]

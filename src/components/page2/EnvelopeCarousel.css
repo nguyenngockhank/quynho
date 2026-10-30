@@ -87,7 +87,7 @@
   justify-content: center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  cursor: none;
+  /* cursor: none; */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   transition: all 0.3s var(--ease-soft);
 }
@@ -473,7 +473,7 @@
 .letter-modal-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 250;
   background: rgba(8, 5, 3, 0.86);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -508,7 +508,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: none;
+  /* cursor: none; */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
   transition: all 0.3s var(--ease-soft);
 }
@@ -846,7 +846,8 @@
   }
 
   .envelope-nav-btn {
-    display: none; /* Swipe is primary on mobile/tablet */
+    display: none;
+    /* Swipe is primary on mobile/tablet */
   }
 
   .envelope-track {
