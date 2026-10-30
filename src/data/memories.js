@@ -37,7 +37,7 @@ export const MEMORIES = [
   {
     key: 'm6', title: 'Henna hehe',
     image: `${PREFIX}/IMG_2211.JPG`,
-    story: 'Anh không ngờ từ những nét vẽ nguệch ngoạc ngày nào, sau này em có thể dựng lên 1 thế giới nhỏ của riêng mình...'
+    story: 'Anh không ngờ từ những nét vẽ nguệch ngoạc ngày nào, sau này em có thể dựng lên 1 đế chế nhỏ của riêng mình...'
   },
   {
     key: 'm7', title: 'Mừng em tốt nghiệp',
@@ -102,5 +102,11 @@ export const MEMORIES = [
     title: 'Sasysis',
     image: `${PREFIX}/IMG_4401.JPG`,
     story: 'Em bỏ công sức nhiều, thường xuyên làm khuya, có tiền nhưng kiệt quệ'
+  },
+  {
+    key: 'm18',
+    title: 'The Beginning',
+    image: `${PREFIX}/beginning.jpg`,
+    story: 'Thật vinh dự được tham dự ngày em debut nghệ thuật trước thế giới'
   },
 ]
