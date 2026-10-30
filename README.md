@@ -4,7 +4,7 @@ An ultra-premium, interactive digital love story you can gift to your partner.
 Warm cream & gold, elegant typography, a 3D particle heart, a galaxy of your
 memories, and a lantern-lit finale that signs off *"Forever Yours."*
 
-Built with **React · Three.js (R3F) · GSAP (ScrollTrigger) · Framer Motion · Lenis smooth scroll**.
+Built with **TypeScript · React · Three.js (R3F) · GSAP (ScrollTrigger) · Framer Motion · Lenis smooth scroll**.
 
 ---
 
@@ -18,8 +18,9 @@ npm run dev      # open the printed http://localhost:5173 URL
 Build for production / deploy:
 
 ```bash
-npm run build    # outputs a static site to /dist
+npm run build    # type-checks, then outputs a static site to /dist
 npm run preview  # preview the production build (fast, deploy-identical)
+npm run typecheck # TypeScript check without emitting files
 ```
 
 Deploy the `/dist` folder to any static host (Netlify, Vercel, GitHub Pages).
@@ -33,16 +34,16 @@ Everything personal lives in **`/src/data/`**:
 
 | File | What it controls |
 |------|------------------|
-| `config.js`   | **Names** (`name`, `heroName`, `signature`) + **anniversary date** (drives the counter) |
-| `memories.js` | Page 2 galaxy stars + Page 3 memory-book — your story, moment by moment |
-| `quotes.js`   | Floating love quotes in the Memory Universe |
-| `messages.js` | Page 3 — your love notes |
-| `book.js`     | The 6 photos inside the opened anniversary book |
+| `config.ts`   | **Names** (`name`, `heroName`, `signature`) + **anniversary date** (drives the counter) |
+| `memories.ts` | Page 2 galaxy stars + Page 3 memory-book — your story, moment by moment |
+| `quotes.ts`   | Floating love quotes in the Memory Universe |
+| `messages.ts` | Page 3 — your love notes |
+| `book.ts`     | The 6 photos inside the opened anniversary book |
 
 ### Add your photos
 1. Put image files in **`/source-photos/`** (e.g. `first.jpg`, `second.jpg` …).
 2. Run **`npm run photos`** — it converts them to optimized WebP in `/public/photos`.
-3. In `memories.js` / `book.js`, set each `image` to e.g. `'/photos/first.webp'`.
+3. In `memories.ts` / `book.ts`, set each `image` to e.g. `'/photos/first.webp'`.
 
 Until you add photos, the site shows tasteful gold placeholder cards — so it
 looks intentional out of the box and stays private-safe to share.

@@ -6,7 +6,8 @@
   "description": "An ultra-premium cinematic anniversary website for Mom & Dad.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host",
     "compress:images:png": "find ./public/photos -iname \\*.png -exec npx @343dev/optimizt {} +",
     "compress:images:jpg": "find ./public/photos -iname \\*.jpg -exec npx @343dev/optimizt {} +",
@@ -27,10 +28,13 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.61.1",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
     "@types/three": "^0.169.0",
     "@vitejs/plugin-react": "^4.3.2",
     "playwright": "^1.61.1",
     "sharp": "^0.35.3",
+    "typescript": "^5.9.3",
     "vite": "^5.4.9"
   },
   "packageManager": "pnpm@8.15.4+sha512.0bd3a9be9eb0e9a692676deec00a303ba218ba279d99241475616b398dbaeedd11146f92c2843458f557b1d127e09d4c171e105bdcd6b61002b39685a8016b9e"

@@ -47,7 +47,7 @@ vercel --prod   # promote to production
 
 GitHub Pages serves from a subpath (`/<repo-name>/`), so set the base first:
 
-1. In `vite.config.js`, add `base: '/YOUR-REPO-NAME/'` to the config.
+1. In `vite.config.ts`, add `base: '/YOUR-REPO-NAME/'` to the config.
 2. `npm run build`.
 3. Publish the `dist` folder to the `gh-pages` branch, e.g.:
    ```bash
@@ -65,7 +65,7 @@ GitHub Pages serves from a subpath (`/<repo-name>/`), so set the base first:
 ## Before you go live
 
 - [ ] Add real photos to `public/photos/` and set the `image` paths in `src/data/`.
-- [ ] Set the real **wedding date** in `src/data/config.js` (drives the counter).
+- [ ] Set the real **wedding date** in `src/data/config.ts` (drives the counter).
 - [ ] Add `public/audio/piano.mp3` and `public/video/family.mp4` (or a video embed).
 - [ ] `npm run build` and skim `npm run preview` once on your phone too.
 

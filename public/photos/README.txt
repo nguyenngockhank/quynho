@@ -13,5 +13,5 @@ Recommended:
   • Keep files reasonably sized (< 500 KB each) for smooth 60fps loading.
 
 Files used by:
-  • /src/data/timeline.js  -> Page 1 timeline
-  • /src/data/memories.js  -> Page 2 galaxy + Page 3 book spread
+  • /src/data/memories.ts  -> Page 2 galaxy
+  • /src/data/book.ts      -> Page 3 memory book
