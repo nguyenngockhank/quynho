@@ -2,7 +2,7 @@ import { Suspense, useEffect, useRef, useState } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
 import { OrbitControls, AdaptiveDpr } from '@react-three/drei'
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import * as THREE from 'three'
 import { gsap } from '../../lib/gsap'
 import GalaxyPhotos from '../three/GalaxyPhotos'
@@ -10,6 +10,7 @@ import Dust from '../three/Dust'
 import { useSmoothScroll } from '../../lib/SmoothScroll'
 import { useInViewport } from '../../lib/useInViewport'
 import { img } from '../../lib/placeholder'
+import BaseModal from '../common/BaseModal'
 import FloatingQuotes from './FloatingQuotes'
 import './Galaxy.css'
 
@@ -44,13 +45,6 @@ export default function Galaxy() {
   const controlsRef = useRef(null)
   const zoomApi = useRef({ in: () => { }, out: () => { } })
   const active = useInViewport(wrapRef)
-
-  // Lock scroll only while a memory card is open (never traps the page).
-  useEffect(() => {
-    if (!lenis) return
-    if (selected) lenis.stop()
-    else lenis.start()
-  }, [selected, lenis])
 
   // Programmatic scroll to the counter — works even where a one-finger swipe
   // is captured by the 3D controls (touch devices).
@@ -129,41 +123,31 @@ export default function Galaxy() {
       <FloatingQuotes />
 
       {/* Cinematic memory card */}
-      <AnimatePresence>
+      <BaseModal
+        isOpen={Boolean(selected)}
+        onClose={() => setSelected(null)}
+        overlayClassName="memory-modal"
+        dialogClassName="memory-card"
+        ariaLabel={selected?.title}
+      >
         {selected && (
-          <motion.div
-            className="memory-modal"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            onClick={() => setSelected(null)}
-          >
-            <motion.div
-              className="memory-card"
-              initial={{ scale: 0.8, y: 40, opacity: 0 }}
-              animate={{ scale: 1, y: 0, opacity: 1 }}
-              exit={{ scale: 0.9, y: 20, opacity: 0 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              onClick={(e) => e.stopPropagation()}
+          <>
+            <div
+              className="memory-card-img"
+              style={{ backgroundImage: `url("${img(selected.image, selected.title, 0, 900, 700)}")` }}
             >
-              <div
-                className="memory-card-img"
-                style={{ backgroundImage: `url("${img(selected.image, selected.title, 0, 900, 700)}")` }}
-              >
-                <span className="memory-card-heart">❤</span>
-              </div>
-              <div className="memory-card-body">
-                <h3 className="memory-card-title">{selected.title}</h3>
-                <p className="memory-card-story">{selected.story}</p>
-                <button className="memory-card-close" onClick={() => setSelected(null)} data-hover>
-                  Đóng lại ký ức
-                </button>
-              </div>
-            </motion.div>
-          </motion.div>
+              <span className="memory-card-heart">❤</span>
+            </div>
+            <div className="memory-card-body">
+              <h3 className="memory-card-title">{selected.title}</h3>
+              <p className="memory-card-story">{selected.story}</p>
+              <button className="memory-card-close" onClick={() => setSelected(null)} data-hover>
+                Đóng lại ký ức
+              </button>
+            </div>
+          </>
         )}
-      </AnimatePresence>
+      </BaseModal>
     </section>
   )
 }

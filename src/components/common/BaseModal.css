@@ -1,0 +1,19 @@
+/* Shared modal shell. Individual modals only override the CSS variables. */
+
+.base-modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--modal-z, 1000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--modal-padding, clamp(16px, 4vw, 32px));
+  background: var(--modal-backdrop, rgba(8, 5, 3, 0.82));
+  backdrop-filter: blur(var(--modal-blur, 12px));
+  -webkit-backdrop-filter: blur(var(--modal-blur, 12px));
+}
+
+.base-modal-dialog {
+  position: relative;
+  outline: none;
+}

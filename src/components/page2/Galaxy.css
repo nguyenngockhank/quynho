@@ -105,14 +105,10 @@
 
 /* Memory card modal */
 .memory-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 1200;
-  display: grid;
-  place-items: center;
-  padding: 5vw;
-  background: rgba(8, 5, 3, 0.78);
-  backdrop-filter: blur(10px);
+  --modal-z: 1200;
+  --modal-backdrop: rgba(8, 5, 3, 0.78);
+  --modal-blur: 10px;
+  --modal-padding: 5vw;
 }
 .memory-card {
   width: min(1000px, 92vw);

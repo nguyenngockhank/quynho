@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import BaseModal from '../common/BaseModal'
 import { LETTERS } from '../../data/letters'
-import { useSmoothScroll } from '../../lib/SmoothScroll'
 import './EnvelopeCarousel.css'
 
 
@@ -19,31 +18,11 @@ export default function EnvelopeCarousel() {
   const scrollLeftRef = useRef(0)
   const dragDistanceRef = useRef(0)
 
-  const lenis = useSmoothScroll()
-
-  // Prevent background scroll when modal is open
-  useEffect(() => {
-    if (!lenis) return
-    if (selectedLetter) {
-      lenis.stop()
-      document.body.style.overflow = 'hidden'
-    } else {
-      lenis.start()
-      document.body.style.overflow = ''
-    }
-    return () => {
-      lenis.start()
-      document.body.style.overflow = ''
-    }
-  }, [selectedLetter, lenis])
-
   // Keyboard navigation for modal
   useEffect(() => {
     if (!selectedLetter) return
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        setSelectedLetter(null)
-      } else if (e.key === 'ArrowLeft') {
+      if (e.key === 'ArrowLeft') {
         navigateModal(-1)
       } else if (e.key === 'ArrowRight') {
         navigateModal(1)
@@ -281,26 +260,17 @@ export default function EnvelopeCarousel() {
 }
 
 
-function LetterModal(props) {
-  const { letter: selectedLetter, navigateModal, setSelectedLetter } = props
-  return <AnimatePresence>
-    {selectedLetter && (
-      <motion.div
-        className="letter-modal-backdrop"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-        onClick={() => setSelectedLetter(null)}
-      >
-        <motion.div
-          className="letter-modal-dialog"
-          initial={{ scale: 0.88, y: 30, opacity: 0 }}
-          animate={{ scale: 1, y: 0, opacity: 1 }}
-          exit={{ scale: 0.92, y: 20, opacity: 0 }}
-          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          onClick={(e) => e.stopPropagation()}
-        >
+function LetterModal({ letter: selectedLetter, navigateModal, setSelectedLetter }) {
+  return (
+    <BaseModal
+      isOpen={Boolean(selectedLetter)}
+      onClose={() => setSelectedLetter(null)}
+      overlayClassName="letter-modal-backdrop"
+      dialogClassName="letter-modal-dialog"
+      ariaLabel={selectedLetter ? `Lá thư ${selectedLetter.number}: ${selectedLetter.title}` : 'Lá thư'}
+    >
+      {selectedLetter && (
+        <>
           {/* Close Button */}
           <button
             className="letter-modal-close"
@@ -402,8 +372,8 @@ function LetterModal(props) {
               </div>
             </div>
           </div>
-        </motion.div>
-      </motion.div>
-    )}
-  </AnimatePresence>
+        </>
+      )}
+    </BaseModal>
+  )
 }
