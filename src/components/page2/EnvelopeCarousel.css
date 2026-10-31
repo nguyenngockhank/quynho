@@ -179,6 +179,15 @@
   box-shadow: 0 25px 50px -12px rgba(217, 184, 112, 0.25), 0 0 20px rgba(217, 184, 112, 0.15);
 }
 
+/* Disabled letter: browsable, but its detail cannot be opened */
+.envelope-card.is-disabled {
+  cursor: default;
+}
+
+.envelope-card.is-disabled .envelope-open-btn {
+  display: none;
+}
+
 /* Envelope triangle flap */
 .envelope-flap {
   position: absolute;

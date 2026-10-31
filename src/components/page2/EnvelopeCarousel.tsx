@@ -114,24 +114,29 @@ export default function EnvelopeCarousel() {
     isDraggingRef.current = false
   }
 
-  // Open modal only if not dragged
+  // Open modal only if not dragged and the letter is not disabled
   const handleCardClick = (letter: Letter) => {
     if (dragDistanceRef.current > 8) {
       dragDistanceRef.current = 0
       return
     }
+    if (letter.disabled) return
     setSelectedLetter(letter)
   }
 
-  // Modal Next/Prev navigation
+  // Modal Next/Prev navigation (skips disabled letters)
   const navigateModal = (direction: number) => {
     if (!selectedLetter) return
     const currentIdx = LETTERS.findIndex((item) => item.id === selectedLetter.id)
     if (currentIdx === -1) return
-    let nextIdx = currentIdx + direction
-    if (nextIdx < 0) nextIdx = LETTERS.length - 1
-    if (nextIdx >= LETTERS.length) nextIdx = 0
-    setSelectedLetter(LETTERS[nextIdx])
+    for (let step = 1; step < LETTERS.length; step += 1) {
+      const nextIdx = (currentIdx + direction * step + LETTERS.length) % LETTERS.length
+      const nextLetter = LETTERS[nextIdx]
+      if (!nextLetter.disabled) {
+        setSelectedLetter(nextLetter)
+        return
+      }
+    }
   }
 
   return (
@@ -189,9 +194,10 @@ export default function EnvelopeCarousel() {
           {LETTERS.map((letter) => (
             <div
               key={letter.id}
-              className="envelope-card"
+              className={`envelope-card${letter.disabled ? ' is-disabled' : ''}`}
               onClick={() => handleCardClick(letter)}
-              data-hover
+              aria-disabled={letter.disabled || undefined}
+              data-hover={letter.disabled ? undefined : true}
             >
               {/* Envelope flap top */}
               <div className="envelope-flap"></div>

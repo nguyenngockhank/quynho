@@ -56,4 +56,6 @@ export interface Letter {
   date: string
   preview: string
   content: string
+  /** When true, the letter's detail cannot be opened from the envelope carousel. */
+  disabled?: boolean
 }

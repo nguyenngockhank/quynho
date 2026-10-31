@@ -250,6 +250,37 @@ Nói ra những lời đó, chắc em cũng phân vân lâu rồi. Em đã phả
 
 Chiều hôm ấy, ta đi cùng nhau, phố cũng lạ đường cũng xa, người mệt chân mỏi, chúng ta đã dừng lại… dừng lại rất lâu, dừng lại nhiều lần nhưng sau mỗi lần dừng lại ta lại nắm tay nhau đi tiếp vì phía trước còn còn có đường.`
 
+const CONFUSE_26 = `Anh muốn gần em 1 chút
+Muốn xác suất gặp em nhiều hơn 1 chút
+Muốn sự cố định sẽ lấn át cái ngẫu nhiên
+
+Rồi anh đến, vô tình gặp em
+Anh thấy em sững sờ nhưng em không né tránh vậy cũng đủ làm anh vui một chút
+
+Nhưng mắt em buồn, lời nói gượng gạo, hành động cứng đờ, anh làm em khó xử rồi
+
+Trong lúc đi xe lên Kofi Kai anh còn nghĩ mình sẽ thả thính “hôm nay halloween làm người iu anh nha” nữa.
+
+Kỳ cục ghê
+
+Đứng hình,
+Bối rối,
+Em chưa chuẩn bị
+
+Anh cũng chưa chuẩn bị giây phút em biến mất trong dòng đời của anh, chưa bao giờ!
+
+Hôm nay, thế giới ngoài kia điên lắm em ạ,
+Cả tỷ usd tiền ảo bị tuồn khỏi chiếc sàn uy tín nhất.
+Cả ngàn người Việt bị phong toả tài khoản ngân hàng.
+Công ty anh thì ảm đạm hơn, một anh nhân viên cũ bị đột quỵ, năm ngoái con ảnh mất, chắc ảnh buồn lắm.
+
+Cuộc sống vô thường nhỉ,
+Anh vô định cứ đi lướt mạng thôi.
+Anh tình cờ có đọc được một câu: “Nếu bạn trao đi tất cả vẫn không đủ, hãy trao đi sự vắng mặt”
+Anh nghĩ, ngay cả việc hiện diện trước mặt em anh còn không làm được, sao lại nói đã trao đi tất cả.
+Anh cũng không biết nữa, mình sẽ có bao nhiêu lần hiện diện nữa… và thế anh chạy qua để gần em thêm 1 chút.`
+
+
 import type { Letter } from '../types'
 
 export const LETTERS: Letter[] = [
@@ -333,6 +364,7 @@ export const LETTERS: Letter[] = [
     date: '24/11/2022',
     preview: 'Những dòng chữ anh viết ra nhưng chưa dám gửi...',
     content: LOVE_22,
+    disabled: true,
   },
   {
     id: 10,
@@ -359,6 +391,7 @@ export const LETTERS: Letter[] = [
     title: 'Khách hàng em quan trọng',
     date: '10/07/2026',
     preview: 'Pending',
+    disabled: true,
     content: YOUR_CUSTOMER_26,
   },
   {
@@ -389,12 +422,21 @@ Em cho phép anh vẫn nhắn tin cho em nhé, khi nào hết thương hết nh�
   },
   {
     id: 15,
-    number: "14",
+    number: "15",
     tag: 'EMOTION',
     title: 'Lặng thinh',
-    date: '28/10/2026',
+    date: '29/10/2026',
     preview: 'sau mỗi lần dừng lại ta lại nắm tay nhau đi tiếp vì phía trước còn còn có đường.',
     content: STOP_26,
+  },
+  {
+    id: 16,
+    number: "16",
+    tag: 'EMOTION',
+    title: 'Khó xử',
+    date: '30/10/2026',
+    preview: 'Anh cũng chưa chuẩn bị giây phút em biến mất trong dòng đời của anh, chưa bao giờ!',
+    content: CONFUSE_26,
   }
 
   //   {
@@ -410,19 +452,7 @@ Em cho phép anh vẫn nhắn tin cho em nhé, khi nào hết thương hết nh�
 
   // Anh nhận ra hạnh phúc đôi khi chẳng cần những nhà hàng sang trọng hay nơi chốn cầu kỳ, chỉ cần là em, ở đâu cũng hóa thành thiên đường.`
   //   },
-  //   {
-  //     id: 3,
-  //     number: '03',
-  //     title: 'Tờ vé số & Hộp sữa',
-  //     tag: 'Kỷ niệm',
-  //     date: '13/03/2019',
-  //     preview: 'Tờ vé số anh tặng ngày lễ, hộp sữa em đưa sau giờ kiệt sức, và nụ hôn kiểu Vi Tiểu Bảo lén lút.',
-  //     content: `Em còn nhớ tờ vé số ngày 13/03 không? Anh hay trêu đó là "tấm vé đổi đời", nhưng thật ra đời anh đã trúng độc đắc từ lúc có em rồi.
 
-  // Còn em, mỗi lần thấy anh kiệt sức sau ca làm lại chuẩn bị sẵn từng hộp sữa, ân cần hỏi han. Sự quan tâm dịu dàng ấy khiến bao mệt mỏi trong anh tan biến hết.
-
-  // Và chẳng biết ai nợ ai, anh chỉ nhớ cái nụ hôn lén kiểu Vi Tiểu Bảo làm má em ửng hồng. Dễ thương đến mức anh muốn ngắm mãi không thôi!`
-  //   },
   //   {
   //     id: 4,
   //     number: '04',
