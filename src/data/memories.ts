@@ -1,7 +1,3 @@
-/* Page 2 (galaxy stars) + Page 3 (book spread).
-   Our love story, moment by moment. Swap the /photos paths with your own
-   (drop files in /source-photos and run `npm run photos`). */
-
 import type { Memory } from '../types'
 
 const PREFIX = '/photos'

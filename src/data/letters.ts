@@ -1,3 +1,66 @@
+const MISSU_26 = `Dạo này anh viết nhiều hơn chút,
+Không biết sinh lý này kéo dài trong bao lâu nữa
+
+Anh thấy có nhiều người vài lần gặp gỡ giai nhân mà chống lên cả một đời thơ văn sự nghiệp
+
+Anh tốt phước hơn, anh gặp em lúc 18 tuổi, thanh xuân rực rỡ, thần thái hồn nhiên và tinh khôi
+Lúc em chạy bàn, còn anh thì đợi bàn chờ em
+Lúc em trở về sau đợt du lịch xa rồi sụi lơ trong vòng tay anh
+
+Anh dự định có khoảng 100 ngàn chữ sử dụng phương pháp liệt kê những khoảnh khắc anh được gặp em ở đoạn này…
+
+Anh thẩn thờ,
+Anh bị mất kết nối với thực tại,
+Anh nhớ những lần mình gặp nhau ở những nơi phá vỡ quy tắc vật lý, nơi đó không có trật tự thời gian, không có khoảng cách địa lý đó là trong tâm trí anh, thậm chí là trong giấc mơ của em.
+
+Hãy để cho anh được yêu... yêu em trong từng suy nghĩ
+Dù là tưởng tượng thôi nhưng anh cũng thấy vui rồi
+Đừng nói chi em ơi tình yêu không cần nói
+Chỉ cần cảm nhận thôi, anh nghĩ cũng đủ rồi
+
+Yêu em`
+
+const CONFUSE_26 = `Anh muốn gần em 1 chút
+Muốn xác suất gặp em nhiều hơn 1 chút
+Muốn sự cố định sẽ lấn át cái ngẫu nhiên
+
+Rồi anh đến, vô tình gặp em
+Anh thấy em sững sờ nhưng em không né tránh vậy cũng đủ làm anh vui một chút
+
+Nhưng mắt em buồn, lời nói gượng gạo, hành động cứng đờ, anh làm em khó xử rồi
+
+Trong lúc đi xe lên Kofi Kai anh còn nghĩ mình sẽ thả thính “hôm nay halloween làm người iu anh nha” nữa.
+
+Kỳ cục ghê
+
+Đứng hình,
+Bối rối,
+Em chưa chuẩn bị
+
+Anh cũng chưa chuẩn bị giây phút em biến mất trong dòng đời của anh, chưa bao giờ!
+
+Hôm nay, thế giới ngoài kia điên lắm em ạ,
+Cả tỷ usd tiền ảo bị tuồn khỏi chiếc sàn uy tín nhất.
+Cả ngàn người Việt bị phong toả tài khoản ngân hàng.
+Công ty anh thì ảm đạm hơn, một anh nhân viên cũ bị đột quỵ, năm ngoái con ảnh mất, chắc ảnh buồn lắm.
+
+Cuộc sống vô thường nhỉ,
+Anh vô định cứ đi lướt mạng thôi.
+Anh tình cờ có đọc được một câu: “Nếu bạn trao đi tất cả vẫn không đủ, hãy trao đi sự vắng mặt”
+Anh nghĩ, ngay cả việc hiện diện trước mặt em anh còn không làm được, sao lại nói đã trao đi tất cả.
+Anh cũng không biết nữa, mình sẽ có bao nhiêu lần hiện diện nữa… và thế anh chạy qua để gần em thêm 1 chút.`
+
+const STOP_26 = `Trong đầu anh lúc ấy hoang mang lắm, những tin nhắn chào nhau buổi sáng, những lần tám nhảm vô tri, những câu than thở về đủ thứ trên đời lướt nhanh qua đầu anh. Anh vội vàng ôm lấy những thứ anh có thể nắm giữ, anh sợ em xoá hết những tin nhắn ấy nên anh đẩy em ra tự mình ở lại trong trong căn phòng ảo ấy.
+
+Anh nghĩ mình sẽ khóc, nhưng không, bản năng anh vẫn đang kháng cự, chống chọi lại một thứ vô hình nào đó… chắc sau này thứ đó sẽ được gọi là nổi đau. Anh thường trách móc em nhưng nó chỉ diễn ra trong đầu, anh không thể mắng mỏ hay cãi vả như các cặp đôi khác. Tâm trí anh rối bời, không thể sắp xếp được câu từ chữ nghĩa. Anh luôn tỏ ra phòng thủ với xã hội này, nhưng anh đã sai khi thu mình với em. Em cũng đã nhắc anh nhiều lần rồi nhỉ. Anh mãi không thay đổi được, anh vừa ngu vừa lỳ nhỉ. Vui thì ko biết cười, buồn cũng ko biết khóc. Hạnh phúc thì ko biết giữ, người bên cạnh thì ko biết trân trọng.
+
+Rồi anh đọc lại những thứ anh viết cho em, anh xem lại dự án còn đang dang dở. Có lẽ những thứ đang bị đình chỉ vô thời hạn, nay vì sự kiện đặc biệt nên lại được khơi ra. Anh cố gắng hoàn thành nó. Anh một lần nữa cảm nhận những cảm xúc cũ đó, lệ cứ thế mà tuôn, anh đã viết ra là phải yêu em nhiều hơn, ưu tiên của em lên trên tất cả, trên cả bản thân anh. Bẵng đi một thời gian, anh lại quên mất rồi.
+
+Nói ra những lời đó, chắc em cũng phân vân lâu rồi. Em đã phải bị tổn thương đến mức nào chứ. Anh xin lỗi!
+
+Chiều hôm ấy, ta đi cùng nhau, phố cũng lạ đường cũng xa, người mệt chân mỏi, chúng ta đã dừng lại… dừng lại rất lâu, dừng lại nhiều lần nhưng sau mỗi lần dừng lại ta lại nắm tay nhau đi tiếp vì phía trước còn còn có đường.`
+
+
 const CONFESSION = `Đôi lời gửi gắm tới bé Tâm, cô gái ngành… ngôn ngữ Anh :v
 
 Đây sẽ là một bức thư anh dành hết tâm tư, tâm tình, tâm trạng, tâm trí, tâm lý, tâm ý, tâm can, tâm nhĩ, tâm thất để viết về Tâm.
@@ -240,46 +303,6 @@ Mình ở xa nhau, thời gian bên nhau đã ít rồi, vậy nên những lúc
 
 Anh hơi tủi thân, anh nghĩ anh hơi hèn mọn, anh chẳng biết viết gì nữa, thương em. Em ngủ ngon.`
 
-const STOP_26 = `Trong đầu anh lúc ấy hoang mang lắm, những tin nhắn chào nhau buổi sáng, những lần tám nhảm vô tri, những câu than thở về đủ thứ trên đời lướt nhanh qua đầu anh. Anh vội vàng ôm lấy những thứ anh có thể nắm giữ, anh sợ em xoá hết những tin nhắn ấy nên anh đẩy em ra tự mình ở lại trong trong căn phòng ảo ấy.
-
-Anh nghĩ mình sẽ khóc, nhưng không, bản năng anh vẫn đang kháng cự, chống chọi lại một thứ vô hình nào đó… chắc sau này thứ đó sẽ được gọi là nổi đau. Anh thường trách móc em nhưng nó chỉ diễn ra trong đầu, anh không thể mắng mỏ hay cãi vả như các cặp đôi khác. Tâm trí anh rối bời, không thể sắp xếp được câu từ chữ nghĩa. Anh luôn tỏ ra phòng thủ với xã hội này, nhưng anh đã sai khi thu mình với em. Em cũng đã nhắc anh nhiều lần rồi nhỉ. Anh mãi không thay đổi được, anh vừa ngu vừa lỳ nhỉ. Vui thì ko biết cười, buồn cũng ko biết khóc. Hạnh phúc thì ko biết giữ, người bên cạnh thì ko biết trân trọng.
-
-Rồi anh đọc lại những thứ anh viết cho em, anh xem lại dự án còn đang dang dở. Có lẽ những thứ đang bị đình chỉ vô thời hạn, nay vì sự kiện đặc biệt nên lại được khơi ra. Anh cố gắng hoàn thành nó. Anh một lần nữa cảm nhận những cảm xúc cũ đó, lệ cứ thế mà tuôn, anh đã viết ra là phải yêu em nhiều hơn, ưu tiên của em lên trên tất cả, trên cả bản thân anh. Bẵng đi một thời gian, anh lại quên mất rồi.
-
-Nói ra những lời đó, chắc em cũng phân vân lâu rồi. Em đã phải bị tổn thương đến mức nào chứ. Anh xin lỗi!
-
-Chiều hôm ấy, ta đi cùng nhau, phố cũng lạ đường cũng xa, người mệt chân mỏi, chúng ta đã dừng lại… dừng lại rất lâu, dừng lại nhiều lần nhưng sau mỗi lần dừng lại ta lại nắm tay nhau đi tiếp vì phía trước còn còn có đường.`
-
-const CONFUSE_26 = `Anh muốn gần em 1 chút
-Muốn xác suất gặp em nhiều hơn 1 chút
-Muốn sự cố định sẽ lấn át cái ngẫu nhiên
-
-Rồi anh đến, vô tình gặp em
-Anh thấy em sững sờ nhưng em không né tránh vậy cũng đủ làm anh vui một chút
-
-Nhưng mắt em buồn, lời nói gượng gạo, hành động cứng đờ, anh làm em khó xử rồi
-
-Trong lúc đi xe lên Kofi Kai anh còn nghĩ mình sẽ thả thính “hôm nay halloween làm người iu anh nha” nữa.
-
-Kỳ cục ghê
-
-Đứng hình,
-Bối rối,
-Em chưa chuẩn bị
-
-Anh cũng chưa chuẩn bị giây phút em biến mất trong dòng đời của anh, chưa bao giờ!
-
-Hôm nay, thế giới ngoài kia điên lắm em ạ,
-Cả tỷ usd tiền ảo bị tuồn khỏi chiếc sàn uy tín nhất.
-Cả ngàn người Việt bị phong toả tài khoản ngân hàng.
-Công ty anh thì ảm đạm hơn, một anh nhân viên cũ bị đột quỵ, năm ngoái con ảnh mất, chắc ảnh buồn lắm.
-
-Cuộc sống vô thường nhỉ,
-Anh vô định cứ đi lướt mạng thôi.
-Anh tình cờ có đọc được một câu: “Nếu bạn trao đi tất cả vẫn không đủ, hãy trao đi sự vắng mặt”
-Anh nghĩ, ngay cả việc hiện diện trước mặt em anh còn không làm được, sao lại nói đã trao đi tất cả.
-Anh cũng không biết nữa, mình sẽ có bao nhiêu lần hiện diện nữa… và thế anh chạy qua để gần em thêm 1 chút.`
-
 
 import type { Letter } from '../types'
 
@@ -353,7 +376,7 @@ export const LETTERS: Letter[] = [
     tag: 'Valentine',
     title: 'Valentine 2022',
     date: '14/02/2022',
-    preview: 'Tiểu cô nương ấy có chút ý tứ, lúc nào cũng tràn trề năng lượng, năng nổ, năng động, đặc biệt có năng lực câu dẫn ta. ',
+    preview: 'Tiểu cô nương ấy có chút ý tứ, lúc nào cũng tràn trề năng lượng, năng nổ, năng động, đặc biệt có năng lực câu dẫn ta',
     content: VALENTINE_22,
   },
   {
@@ -437,7 +460,17 @@ Em cho phép anh vẫn nhắn tin cho em nhé, khi nào hết thương hết nh�
     date: '30/10/2026',
     preview: 'Anh cũng chưa chuẩn bị giây phút em biến mất trong dòng đời của anh, chưa bao giờ!',
     content: CONFUSE_26,
-  }
+  },
+
+  {
+    id: 17,
+    number: "17",
+    tag: 'EMOTION',
+    title: 'Nhà văn của em',
+    date: '31/10/2026',
+    preview: 'mình gặp nhau ở những nơi phá vỡ quy tắc vật lý, nơi đó không có trật tự thời gian, không có khoảng cách địa lý đó là trong tâm trí anh, thậm chí là trong giấc mơ của em.',
+    content: MISSU_26,
+  },
 
   //   {
   //     id: 2,
