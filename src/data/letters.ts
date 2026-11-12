@@ -338,8 +338,24 @@ Cám ơn em về lời chào, lời chúc và nụ cười.
 
 Có lẽ chúng ta đã hết duyên từ lần đầu gặp nhau rồi. Thế nên mỗi lần tương phùng sau đó, không còn là sự sắp đặt của số phận, mà chính là vì chúng ta đã chủ động chọn bước về phía nhau.
 
-Và anh cũng sợ, chúng ta đang ở cái tuổi buông tay nhau đủ lâu, đến khi gặp lại người kia đã bước vào lễ đường cùng ai khác. Hôm nay, anh chọn sự ích kỷ, anh theo đuôi em, anh chưa chấp nhận được có thằng khác thay anh bên em. Ngày sau, nếu có thay đổi anh cũng không biết sự lựa chọn ấy được gọi là bao dung hay buông bỏ nữa...
+Và anh cũng sợ, nếu lần này anh không bước tới mà chúng ta đang ở cái tuổi buông tay nhau đủ lâu, đến khi gặp lại người kia đã bước vào lễ đường cùng ai khác. Hôm nay, anh chọn sự ích kỷ, anh theo đuôi em, anh chưa chấp nhận được có thằng khác thay anh bên em. Ngày sau, nếu có thay đổi anh cũng không biết sự lựa chọn ấy được gọi là bao dung hay buông bỏ nữa...
 `
+
+const TREASURE_2026 = `Em còn nhớ câu đùa: "chi phí để duy trì một em ghệ" không?
+
+Chắc nhiều lần em cũng thấy anh xót ruột khi thấy hoá đơn cao muốn ngất. Anh cũng nhiều lần chia sẻ với em về điều này.
+
+Trong nhận thức của anh tiền bạc rất quan trọng, trước khi gặp em, anh còn đang try hard với đời, chật vật trèo lên tầng bậc thang để đến đỉnh kim tử tháp.
+
+Có những thứ anh cũng không nỡ mua cho bản thân, nhưng chỉ cần thấy em vui, anh lại thấy mọi sự chi tiêu đều xứng đáng.
+
+Với anh, đôi khi tiền bạc lại là thứ rẻ nhất để đổi lấy sự bình yên và nụ cười của em. Đó là những lúc anh lo học phí cho em, cùng em đi chọn chiếc máy tính mới, hay những chiếc điện thoại em đang dùng.
+
+Có những khoản chỉ để phục vụ niềm vui nhỏ như một phần mềm chỉnh ảnh, có khoản để duy trì đam mê qua từng tháng, có những khoản lại là sự tin tưởng khi em muốn giúp đỡ bạn bè lúc khó khăn.
+
+Anh tin những đồng tiền ấy cũng từng góp mặt trong nhiều dấu mốc quan trọng của đời em: từ show thời trang đầu tiên em tự tay gầy dựng, chuyến về quê của mẹ để chăm bà những ngày cuối, cho đến đêm liveshow thần tượng mà em hằng ao ước.
+
+Sau tất cả, thứ đọng lại trong anh không phải là con số, mà là ánh mắt nhẹ nhõm của em, và những khoảnh khắc em yếu lòng để anh có cơ hội được che chở, chăm sóc một chút. Tiền bạc có thể là tài sản nhưng em mới là kho báu của anh.`
 
 import type { Letter } from '../types'
 
@@ -526,5 +542,13 @@ Em cho phép anh vẫn nhắn tin cho em nhé, khi nào hết thương hết nh�
     preview: 'chúng ta đang ở cái tuổi buông tay nhau đủ lâu, đến khi gặp lại người kia đã bước vào lễ đường cùng ai khác',
     content: SELECTION_26,
   },
-
+  {
+    id: 20,
+    number: "20",
+    tag: 'EMOTION',
+    title: 'Kho báu',
+    date: '11/11/2026',
+    preview: 'chi phí để duy trì một em ghệ',
+    content: TREASURE_2026,
+  },
 ]
